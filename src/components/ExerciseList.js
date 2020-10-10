@@ -7,12 +7,8 @@ const ExerciseLIst = ({exercises}) => (
             return(
                 // Por cada iteración retorna una card
                 <Card
-                    key={exercise.id}
-                    title={exercise.title}
-                    description={exercise.description}
-                    img={exercise.img}
-                    leftColor={exercise.leftColor}
-                    rightColor={exercise.rightColor}
+                // destructuring
+                {...exercise}
                 />
             )
         })}
